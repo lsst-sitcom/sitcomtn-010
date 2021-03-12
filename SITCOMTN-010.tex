@@ -5,6 +5,7 @@
 % Package imports go here.
 
 % Local commands go here.
+\newcommand{\FIXME}[1]{{\bf \textcolor{red}{#1}}}
 
 %If you want glossaries
 %\input{aglossary.tex}
@@ -16,7 +17,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Keith Bechtol
+Rubin Observatory System Integration Test and Commissioning Team, Community Engagement Team, and Operations Executive Team
 }
 
 \setDocRef{SITCOMTN-010}
@@ -29,6 +30,15 @@ Keith Bechtol
 
 \setDocAbstract{%
 We propose a model for collaboration between the Vera C. Rubin Observatory and the science community to enhance science validation activities during commissioning.
+Commissioning data products will be made available to members of the science community in the Rubin Science Platform (RSP) in the form of Data Previews, with general user support provided by the Community Engagement Team.
+In addition, the Rubin Observatory is planning incremental releases of commissioning data products in the RSP that would be accessible on a faster timescale and on a less supported basis to facilitate rapid iterative evaluation of scientific performance by Project staff and science community members.
+%The proposed model for community engagement in commissioning science validation includes regular 
+%Together with the Operations Community Engagement team, the Rubin Observatory Commissioning team 
+With the start of bulk data collection, the Rubin Observatory Commissioning team plans to organize regular meetings with science community members to share updates on data collection and processing, science performance analysis progress, suggest investigations, and collect feedback from the science community. 
+Reports submitted by the science community will be used to develop the agenda for these meetings and to inform ongoing commissioning and early operations activities.
+%We discuss on  communication channels to Rubin 
+%The Rubin Observatory will 
+%The science community that will be used to develop the agenda for these meetings and to inform ongoing commissioning and early operations activities.
 }
 
 % Change history defined here.
@@ -50,75 +60,103 @@ We propose a model for collaboration between the Vera C. Rubin Observatory and t
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
 
-\section{Scope}
+%\section{Introduction} % Scope
 
-This document proposes an integrated approach to commissioning science validation for the Vera C. Rubin Observatory that leverages scientific community involvement and expertise.
-%a model for collaboration between the Vera C. Rubin Observatory and the science community to enhance science validation activities during commissioning. 
-The overall plan for System Integration and Commissioning is described in LSE-79, and the overall plan for Commissioning Science Validation is described in LSE-439. 
+%This document proposes a model for collaboration between the Vera C. Rubin Observatory and the science community to enhance science validation activities during commissioning. 
+%an integrated approach to commissioning science validation for the Vera C. Rubin Observatory that leverages scientific community involvement and expertise.
+%
+%The overall plan for System Integration and Commissioning is described in LSE-79, and the overall plan for Commissioning Science Validation is described in LSE-439. 
+%Suggestions from the science community regarding the strategy for on-sky observations during the commissioning period are being discussed on the LSST Community forum. 
+%Commissioning data will be 
 
-\section{Motivation}
+\section{Introduction}
 
-The Vera C. Rubin Observatory Construction Project has planned a series of in-dome calibration activities and on-sky observing campaigns during the system integration and commissioning period that are designed to explore the range of demonstrated technical and scientific performance of the as-built system (LSE-79). Three topics to be addressed during the commissioning period include system verification, validation, and characterization.
+The Rubin Observatory Construction Project has planned a series of in-dome calibration activities and on-sky observing campaigns during the system integration and commissioning period that are designed to explore the range of demonstrated technical and scientific performance of the as-built system (LSE-79). These activities will demonstrate readiness to begin the 10-year Legacy Survey of Space and Time (LSST). 
+On-sky observing campaigns are planned for both the commissioning camera (ComCam) and LSST Camera (LSSTCam).
+Three topics to be addressed during the commissioning period include verification, validation, and characterization, as defined below.
 
 \begin{itemize}
 
 \item \textbf{Verification:} Does the system meet the requirement specifications defined in the LSST System Requirements (LSE-29) and Observatory System Specification (LSE-30) documents?
 
-\item \textbf{Validation:}  Does the system do what we want and/or expect it to do? Do the delivered data products and data access services meet the needs of the science community?
+\item \textbf{Validation:} Does the system do what we want and/or expect it to do? Do the delivered data products and data access services meet the needs of the science community?
 
-\item \textbf{Characterization:} Do we understand why the systems behaves the way that is does? How can the system be optimized to enhance science performance and observing efficiency?
+\item \textbf{Characterization:} Do we understand why the system behaves the way that is does? How can the system be optimized to enhance science performance and observing efficiency?
 
 \end{itemize}
 
-As both stakeholders and science domain experts, members of the broad science community are well positioned to engage in science validation activities. 
+The Rubin Observatory Construction Project is responsible for reporting verification results from testing system-level requirements at the Operations Readiness Review prior to the start of LSST Operations.
+Meanwhile, scientific validation and characterization of the observatory is a continuous effort that begins during commissioning and will continue throughout LSST operations, and will ultimately be assessed by the broad utilization of LSST data products as well as scientific, educational, and broader societal impacts of the mission.
 
+As both stakeholders as well as scientific and technical domain experts, members of the broad science community are essential participants in scientific validation of the LSST.
+Community engagement during the commissioning period could be particularly impactful, both for preparing the Rubin Observatory for efficient operations and for preparing the science community.
+% and this effort is expected to begin during the commissioning period.
+%We describe here an integrated approach for science validation during commissioning that leverages community involvement and expertise.
+%There are several potential opportunities to enhance commissioning science validation that could be realized by providing access to 
+%Both the Rubin Observatory Construction Project and broad science community can benefit from 
+%The Rubin Observatory Construction Project is responsible for system verification. 
+%As both stakeholders and science domain experts, members of the broad science community have  in science validation activities. 
 %We describe an integrated approach to commissioning that also leverages community involvement and expertise.
 %The larger scientific community, 
 %Members of the broad science community are core stakeholders in the Rubin Observatory and have expertise 
-
-Some specific motivations to :
+Examples of added value from community engagement in science validation during the commissioning include:
 
 \begin{itemize}
-\item to inform on-sky observation strategy during commissioning (e.g., optimal dithering strategy for DDFs)
-\item to contribute to science validation through code contributions / algorithm contributions
-\item to contribute to science validation via data analysis (i.e., data access, use, vetting, documentation)
-\item to contribute towards LSST DR1 by developing quantities such as photo-z
-\item to provide practice for the Early Operations team supporting the science community
-\item to accelerate early science by gaining familiarity with data model and data characteristics
-\item to deliver early science based on commissioning data
-\item to facilitate opportunities for Project members to be participate in science and be recognized for their contributions
+\item informing on-sky observation strategy during commissioning (e.g., optimal dithering strategy for DDFs),
+\item contributing to science validation through code contributions / algorithm contributions,
+\item contributing to science validation via data analysis (i.e., data access, use, vetting, documentation),
+\item contributing to LSST DR1 data products by developing and validating derived quantities such as photo-$z$ estimates,
+\item testing data access tools at scale and with realistic science use cases,
+\item exercising workflow for the Early Operations team supporting the science community,
+\item accelerating early science with LSST by increasing familiarity with data model and data characteristics,
+\item delivering early science based on commissioning data,
+\item creating opportunities for Project staff members to participate in LSST science and be recognized for their contributions.
 \end{itemize}
 
-A primary motivation in my mind to help make LSST DR1 as good as it can be by engaging with the community early. The intent of this model is that it is beneficial to the Project, and hopefully accelerates early scientific utilization of Rubin data.
+To help achieve these objectives, the Rubin Observatory is preparing to release commissioning data for scientific exploration by the community prior to the first LSST data release.
+%a series of three Data Previews, with the latter two based on ComCam and LSSTCam data, and is planning for additional incremental releases of commissioning data products that would be accessible on a faster timescale.
+%on a less supported basis on a faster timescale.
+%We anticipate that the quality of LSST DR1 will be enhanced by engaging with the community.
+% in scientific analysis of Data Previews, as well as potentially more rapid data access scenarios.
+%A primary motivation in my mind to help make LSST DR1 as good as it can be by engaging with the community early. 
+%The intent of the community engagement model proposed here is that it is beneficial to the Project in preparing for LSST DR1, and hopefully accelerates early scientific utilization of Rubin data.
 
 \section{Levels of Engagement}
 
-We anticipate at least three levels of science community engagement with Rubin Observatory commissioning data. 
+We anticipate at least two levels of science community engagement with Rubin Observatory commissioning data. 
 
 \begin{enumerate}
 
-\item Non-staff members that collaborate directly with the Project Commissioning Team, performing work directed by the Project with specific deliverables and timelines. 
+\item Non-staff members that collaborate directly with the Rubin Observatory Project performing work as directed by the Project with specific deliverables and timelines. 
 Examples include International Contributions for Data Rights and other groups that establish MoUs with the Project (exact process TBD).
 
-\item Friendly science users who access and analyze commissioning data and actively participate in joint science validation activities with the Commissioning Team (described below). 
+\item Science community members who access and analyze commissioning data that has been released to LSST users.
 %There is no formal expectation of support, 
-The level of support for early data access prior to the Data Previews is on a best-effort basis.
+%The level of support for early data access prior to the Data Previews is on a best-effort basis.
 %, and and collaboration is for mutual benefit. 
-The data exploration by science community members is not directed by the Project, although some coordination and collaboration is likely to be generally beneficial.
+Technical and scientific exploration by science community members is not specifically directed by the Project, although some coordination and collaboration is likely to be generally beneficial.
+Science community members are welcome and encouraged to participate in joint science validation activities with the Commissioning Team, and to provide feedback to the Project through the mechanisms outlined in this document.
 The Project will likely need to prioritize what feedback is acted upon.
-
-\item General science users of Data Previews that perform science analysis, but do not necessarily directly engage with the Commissioning Team. 
-This more indirect interaction is still beneficial to the Project as a preview of realistic science workflows and results.
+%and actively participate in joint science validation activities with the Commissioning Team (described below). 
+%\item General science users of Data Previews and Incremental Releases that perform science analysis on commissioning data, but do not necessarily directly engage with the Rubin Observatory Project in terms of providing feedback. 
+%This more indirect interaction is still beneficial to the Project as a preview of realistic science workflows and results.
 
 \end{enumerate}
 
-A main goal of the 
+A primary goal of this document is to guide interactions between Rubin Observatory Project and science community members to make these as productive as possible.
+%above to make these as productive as possible for both the Rubin Observatory Project and science community members.
 
-\section{Data Access}
+\section{Data Products and Data Access}
+
+Policies for access and appropriate use of data products during the commissioning period are described in the Rubin Observatory Data Policy (RDO-013).
+%During the commissioning period, it is expected that the RSP will be the primary 
+%Access to these  (RDO-013)
+Commissioning data will be made available on the RSP.
+Guidelines for Community Participation in Data Preview 0 (RTN-004) provides an example discussion of delegate benefits and responsibilities, as well as delegate selection criteria.
 
 \subsection{Data Previews}
 
-The Early Operations team has planned three more structured data releases (reference for Data Previews):
+Prior to the first LSST Data Release, the Early Operations team has planned three Data Previews based simulated and/or Rubin Observatory commissioning data \FIXME{(reference for Data Previews)}:
 
 \begin{itemize}
 \item Data Preview 0: based on DESC DC2 image simulations
@@ -126,21 +164,85 @@ The Early Operations team has planned three more structured data releases (refer
 \item Data Preview 2: based on LSSTCam
 \end{itemize}
 
-Data Previews 1 and 2 are planned to appear roughly 6 months after the completion of the associated observing campaign.
+Data Previews 1 and 2 based on commissioning data are planned to appear roughly 6 months after the completion of the associated observing campaign. 
+The Data Previews are designed to exercise the process of creating a data release. 
 
-\subsection{Rapid Data Previews}
+\subsection{Incremental Data Previews}
 
-In addition to the three planned Data Previews, we introduce the concept of a series of incremental data releases made available to the science community on a faster timescale, though in a less supported fashion. 
-The Rapid Data Previews could be as small as a few ComCam visits, and as large as a candidate release for Data Preview 2. 
-The data products are expected to be the same as those used by the Project Commissioning, and will be provided to the science community ``as is'' to facilitate rapid exploration.
+In addition to the three planned Data Previews, the Rubin Observatory is preparing to make a series of Incremental Data Previews available to the science community on a faster timescale, though in a less supported fashion. 
+The level of data processing, quality assurance, and documentation of Incremental Data Previews will be more heterogeneous than the Data Previews, with the caveat that some fraction of data products will not be useful for most scientific investigations.
+The set of data products released with the Incremental Data Previews will increase throughout the commissioning period, e.g., starting with calibration frames, then single-visit on-sky images, and expanding to include single-visit catalogs, coadded images and catalogs, and difference image analysis products.
+The level of processing and types of derived data products released will be driven by the needs of the Rubin Observatory commissioning team.
+In terms of data volume, the Incremental Data Previews could be as small as a few ComCam visits, and grow to be as large as a candidate release for Data Preview 2. 
+The data products are expected to be the same as those used by the Project Commissioning team, and will be provided to the science community ``as is'' to facilitate rapid exploration.
 %smaller datasets that can be acquired, reduced, vetted, and made available to the science community on a much faster timescale in a less supported fashion.
 
+The Incremental Data Previews will be provided and supported on a best-effort basis.
+The cadence of Incremental Data Previews is to be determined, with a tentative goal to provide an updated release on a roughly weekly basis.
 
 \section{Project and Science Community Interactions}
 
+\subsection{Asynchronous Feedback from the Science Community}
 
+During the commissioning period, the science community is requested to communicate science validation findings in the form of technical memos visible to Rubin Observatory staff and to all data rights holders. 
+Feedback received in these memos is likely to have the highest impact and to be most directly actionable by the Project under the following conditions:
+
+\begin{enumerate}
+
+\item the findings are reproducible on the RSP,
+
+\item technical memos include links to software used in the analysis, and/or additional documentation and references needed to understand the analysis,
+
+\item findings are described in sufficient detail to be understood based on the information contained in the memo and references therein,
+
+\item impacts to scientific performance are quantified.
+
+\end{enumerate}
+
+\FIXME{Provide mechanism to cite these memos??}
+
+Other communications tools such as LSST Community will be monitored by the Rubin Observatory project, and these communication channels may be useful to coordinate analyses and to develop findings presented in the technical memos.
+Given the time-sensitive nature of commissioning activities, the Project will prioritize responses to the technical memos.
+
+%Feedback that is 
+%In general, the findings should be reproducible on the RSP to facilitate further investigation, and to be actionable by the Rubin Observatory. 
+%Technical memos should include a link to software used in the analysis.
+%The findings are ideally reproducible on the RSP.
+% that will be visible to 
+
+\subsection{Meetings}
+
+The Rubin Observatory plans to hold regular science validation meetings with the science community to share updates on data collection and data processing campaigns, suggest investigations, and to exchange knowledge regarding the scientific performance characterization of those data products.
+The cadence of these meetings is to be determined (e.g., a one-hour meeting monthly to weekly).
+The agenda of these meetings will be set by the commissioning team, and the science community will be encouraged to contribute.
+The technical memos described above are envisioned as an import source of content for building the agenda of these meetings.
+
+In addition, the Rubin Observatory plans to periodically organize more extended Science Validation Workshops for discussion and co-working, likely associated with major data delivery milestones, such as the Data Previews.
+%Findings from the science community are encouraged to take the form of technical memos which would be made av 
+%Coordination of science validation activities 
+%and communicating the results of scientific exploration during the commissioning period can 
+
+\FIXME{Need some form of triage to allow sub-teams to form for deeper investigations?}
 
 \section{Anticipated Publications}
+
+Publications based on commissioning data will follow the policies outlined in the Rubin Observatory Data Policy (RDO-013) and Project Publication Policy (LPM-162).
+
+The Rubin Observatory Project has planned a series of Construction Papers documenting the demonstrated performance of the as-built system. 
+This documentation package is part of the Construction Completeness Criteria. 
+The planned set of Construction Papers includes publications describing the science verification of Prompt Processing and Data Release Processing, as well as dozens of papers describing observatory components and their technical performance.
+
+%LSST Publication Policy (LPM-162). Science Collaborations have Publication Policies (e.g., SSSC, TVS, DESC, )
+Members of the science community that make substantial contributions to commissioning science validation activities may be invited to be co-authors on publications led by the Rubin Observatory Project at the discretion of the Project.
+\FIXME{One model.}
+For example, following the completion of the Construction papers, the Rubin Observatory Project is considering to organize a series of science demonstration papers based on the Data Previews that would welcome community participation.
+Potential topics include absolute photometric calibration, PSF modeling, object classification, photometric redshifts, sky background modeling, transient and variable object photometry, moving object photometry, and other investigations that would scientifically validate and/or enhance data products included in LSST data releases.
+\FIXME{Another model.}
+For scientific publications led by community members that are based on commissioning data that have benefitted directly from interactions with the Rubin Observatory project, the authors are encouraged to invite the participation of Rubin Observatory staff and/or otherwise recognize contributions.
+\FIXME{This needs work...}
+
+%\section{Recognizing Contributions}
+
 
 \appendix
 % Include all the relevant bib files.
@@ -154,8 +256,6 @@ The data products are expected to be the same as those used by the Project Commi
 \input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
 %\printglossaries
-
-
 
 
 
