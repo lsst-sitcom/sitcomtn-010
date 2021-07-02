@@ -1,4 +1,4 @@
-\documentclass[SE,authoryear,toc]{lsstdoc}
+\documentclass[SE,authoryear,toc,lsstdraft]{lsstdoc}
 % lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
 \input{meta}
 
@@ -17,7 +17,7 @@
 % \setDocSubtitle{A subtitle}
 
 \author{%
-Keith Bechtol, Chuck Claver, and the SIT-Com Team
+Keith Bechtol, Chuck Claver, System Integration Test and Commissioning Team, Project Science Team, on behalf of the Rubin Construction Project
 }
 
 \setDocRef{SITCOMTN-010}
@@ -299,7 +299,7 @@ Example core competencies sought:
 \item Optical/NIR astronomical image analysis
 	\begin{itemize}
 	\item Technical pixel properties from the instrument
-	\item Instrument signature removal - bias subtraction, flatfielding, correction to ``brighter fatter effects'' and other sensor anomalies and optical artifacts (e.g., ghosting or glints)
+	\item Instrument signature removal - bias subtraction, flat-fielding, correction to ``brighter fatter effects'' and other sensor anomalies and optical artifacts (e.g., ghosting or glints)
 	\item PSF characterization
 	\item Visualization
 	\end{itemize}
@@ -321,7 +321,7 @@ Example core competencies sought:
 \item Technical and observational astronomy
 	\begin{itemize}
 	\item Observation planning and execution
-	\item Telescope optical properties - alignment and active optics etc...
+	\item Telescope optical properties, e.g., alignment and active optics
 	\item Technical imaging characteristics - pixel level
 	\item Spectral filter properties
 	\end{itemize}
@@ -329,12 +329,22 @@ Example core competencies sought:
 
 \appendix
 
-\section{Data Previews from Commissioning}
+\section{Appendix: Data Previews from Commissioning}
 \label{data_previews}
 
 The following description of the Data Previews is provided as contextual information. This AO has a distinct purpose from the Data Previews (see Section~\ref{purpose}).
 
-The Rubin Observatory Operations team is carrying out a series of pre-LSST data release scenarios, called ``Data Previews,'' to help the team and the LSST Science Community prepare for the full survey. While the first Data Preview, DP0, is based on simulated LSST Camera data, the subsequent previews DP1 and DP2 will make the Project?s commissioning data available to the community. DP1 is currently planned for northern Spring 2023 and will be based on images taken with the commissioning camera (ComCam). DP2 is currently planned for northern Winter 2023 and will be based on the science validation images taken with LSST Cam. In each Data Preview, all the various data products output by the Project's processing pipelines will be released together and made available to the community by the  Operations team after a suitable period of testing by the Rubin System Integration and Commissioning (SIT-Com) Verification and Validation team. In DP1, the Project plans to run the prompt processing pipeline, but retain its products for internal use only (including testing of the community alert Brokers). Standard predefined Alerts (produced during the campaign but then archived for later use) and other prompt products will be part of the DP1 data release. In DP2, a limited Alert stream will be provided to the community Brokers in close to real time, and these Alert packets will also be queryable in the prompt product database in the same way they would be during survey operations. Products from the Data Release Processing will only become available at the data releases. 
+The Rubin Observatory Operations team is carrying out a series of pre-LSST data release scenarios, called ``Data Previews,'' to help the team and the LSST Science Community prepare for the full survey. While the first Data Preview, DP0, is based on simulated LSST Camera data, the subsequent previews DP1 and DP2 will make the Project's commissioning data available to the community. DP1 is currently planned for northern Spring 2023 and will be based on images taken with the commissioning camera (ComCam). DP2 is currently planned for northern Winter 2023-2024 and will be based on the science validation images taken with LSST Cam. In each Data Preview, all the various data products output by the Project's processing pipelines will be released together and made available to the community by the Operations team after a suitable period of testing by the Rubin System Integration and Commissioning (SIT-Com) Verification and Validation team. In DP1, the Project plans to run the prompt processing pipeline, but retain its products for internal use only (including testing of the community alert Brokers). Standard predefined Alerts (produced during the campaign but then archived for later use) and other prompt products will be part of the DP1 data release. In DP2, a limited Alert stream will be provided to the community Brokers in close to real time, and these Alert packets will also be queryable in the prompt product database in the same way they would be during survey operations. Products from the Data Release Processing will only become available at the data releases. 
+
+Data Release 1 based on the first 6 months of LSST data is currently planned for northern Fall 2024 and Data Release 2 based on LSST Year 1 data is currently planned for northern Spring 2025.
+
+Data releases will occur no earlier than the dates described in the release scenario above and summarized in Figure~\ref{release_scenarios}. The schedule as currently estimated has an uncertainty of 2-3 months, with the releases likely occurring later than the indicated dates.
+
+\begin{figure}
+\label{release_scenarios}
+\centering
+\includegraphics[width=\textwidth]{rubin_data_release_scenarios.png}
+\end{figure}
 
 % Include all the relevant bib files.
 % https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
