@@ -4,13 +4,15 @@
    :target: https://github.com/lsst-sitcom/sitcomtn-010/actions/
 
 ####################################################################################
-Model for Community Engagement in Rubin Observatory Commissioning Science Validation
+Announcement of Opportunity: Community Engagement with Rubin Observatory Commissioning Effort
 ####################################################################################
 
 SITCOMTN-010
 ============
 
-We propose a model for collaboration between the Vera C. Rubin Observatory and the science community to enhance science validation activities during commissioning.
+The Vera C. Rubin Observatory invites members of the US and Chilean LSST science communities to join the Project Commissioning Team in order to make value-added contributions that facilitate an efficient transition into LSST Operations. In this Announcement of Opportunity (AO) we include descriptions of its purpose, examples of value-added contributions, terms and conditions for participation, and the process to respond to this AO via submitted Letters of Interest (LOIs).
+
+The anticipated total value-added contribution via this program is of order 15-20 FTE of effort. This effort will likely be distributed across a larger number of individuals and preferably organized into discrete groups of like interests and skills, and performed over a roughly two-year period that includes calendar years 2022 and 2023. Financial support associated with this AO is limited, and non-Rubin-staff members of the Commissioning Team are generally expected to have other sources of support (limited travel and local accommodation support to enable on-site work at key activity centers in Tucson, SLAC, and Chile can be made available).
 
 Links
 =====
